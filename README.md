@@ -1,15 +1,8 @@
 Virtual_Disk_Driver
 ===================
 
-There are various aspects to this project. Some of the simulation of the project was written by my 
-instructor in order to set up the project. The following files were written by me:
-    -smsa_driver.c/.h
-    -smsa_cache.c/.h
-    -smsa_client.c
-    -smsa_server.c
-    -Makefile
+All files in the Source Files directory were written by Gabe Harms
 
-To build this project, simply download all folders; placing the makefile it the top directory. 
-After navigating to this directory from the command prompt, just type "make" and enter.
-
-To use
+At the core this program uses a driver that I wrote to communicate with a virtual memory file system known as SMSA. Many
+additions were added such as the cache which stores locally all recent memory accesses. Then a server was added which 
+allowed memory requests to be placed remotely to the server which contained the SMSA file system locally
